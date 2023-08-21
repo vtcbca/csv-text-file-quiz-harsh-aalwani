@@ -1,0 +1,20 @@
+1. Write a program to create "intro.txt" file. Count a total number of lines and print first charcter of each line.
+2. Crate a Emp.csv file which contain eid, ename, dept and salary. Print only those record where salary >= 15000.
+3. Write a program to create "BCA.txt" file which contain information about BCA course. 
+   count and print the total number of lines starting with ‘A’, ‘B’, and ‘C’ in "intro.txt" file. 
+4. Create salary.csv file which contain sid,sname,salary.
+   Display the employee record whose name begins from "S‟ also show no. of employee with first letter "S‟ out of total record.
+
+    Output should be:
+  
+            2,om,4000
+            5,sai,4200
+            Number of "S‟ names are 2/5
+
+5.  Write a program to create "intro.txt" file.  Write it in reverse order in other file "reverse.txt"
+6.  Create inventory.csv file which contain Item_ID,Item_Name,Qty,Rate
+    Display the inventory file with amount of each Item and copy to another file "inventory_Copy.csv".
+7.  Write a program to create "intro.txt" file.  Print only even number of row.
+8.  Create Contact.csv file which contain name,contact. Use "|" as Delimiter.
+    Search perticular contact by entering person name . 
+
