@@ -1,9 +1,17 @@
 # Question 4 Solution
 import csv
 header=['sid','name','salary']
-rows=[[1,'krishna',4600],[2,'om',4000],[2,'ram',4000],[3,'radha',4600],[5,'sai',4200]]
-temp=0     #counter
-
+rows=[]; L=[]
+temp=1     #counter
+# Taking user records
+print("Insert Staff Details:- \n")
+while temp!=0:
+    sid=int(input("Enter Staff ID: "))
+    name=input("Enter Staff Name: ")
+    salary=int(input("Enter Staff Salary: "))
+    L=[sid,name,salary]
+    rows.append(L)
+    temp=int(input("\nEnter '0' to stop inserting records[Enter any other number to continue]: "))
 # Writing file
 with open("C:\sqlite3\salary.csv","w",newline="") as write_obj:
     csv_writer=csv.writer(write_obj)
@@ -17,5 +25,4 @@ with open("C:\sqlite3\salary.csv","r") as read_obj:
         if row[1][0]=='s' or row[1][0]=='S':      #if employee name starts with 's',it will pass
             print("{},{},{}".format(row[0],row[1],row[2]))
             temp=temp+1        #number of times condition was satisfied
-    maxlen=list(csv_reader)
     print("Number of 'S' names are {}/{}".format(temp,len(rows)))
