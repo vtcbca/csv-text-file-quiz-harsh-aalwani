@@ -1,4 +1,4 @@
-# Question Solution 4
+# Question 4 Solution
 import csv
 header=['sid','name','salary']
 rows=[[1,'krishna',4600],[2,'om',4000],[2,'ram',4000],[3,'radha',4600],[5,'sai',4200]]
