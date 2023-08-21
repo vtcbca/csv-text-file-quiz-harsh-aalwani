@@ -14,7 +14,7 @@ with open("C:\sqlite3\salary.csv","w",newline="") as write_obj:
 with open("C:\sqlite3\salary.csv","r") as read_obj:
     csv_reader=csv.reader(read_obj)
     for row in csv_reader:
-        if row[1][0]=='s':      #if employee name starts with 's',it will pass
+        if row[1][0]=='s' or row[1][0]=='S':      #if employee name starts with 's',it will pass
             print("{},{},{}".format(row[0],row[1],row[2]))
             temp=temp+1        #number of times condition was satisfied
     maxlen=list(csv_reader)
